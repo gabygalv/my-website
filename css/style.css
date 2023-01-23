@@ -59,6 +59,39 @@ Master Container
 
 /*
 ========================================
+Navigation Bar
+========================================
+*/
+.navbar {
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+  background-color: rgb(102, 153, 204);
+  height: 26px;
+}
+
+.navbar ul {
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.navbar li::after {
+  content: ' | ' ;
+  margin: 10px auto;
+  color: black;
+}
+
+.navbar li:last-child::after {
+  content: ' ';
+}
+
+.navbar a:hover {
+  color: #003399;
+}
+
+/*
+========================================
 Main Header
 ========================================
 */
