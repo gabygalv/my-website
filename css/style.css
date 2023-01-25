@@ -64,7 +64,7 @@ Navigation Bar
 */
 .navbar {
   display: flex;
-  align-items: center;
+  align-items: auto;
   margin-top: auto;
   background-color: rgb(102, 153, 204);
   height: 26px;
@@ -77,13 +77,13 @@ Navigation Bar
 }
 
 .navbar li::after {
-  content: ' | ' ;
-  margin: 10px auto;
+  content: ' ' ;
+  margin: .66rem;
   color: black;
 }
 
 .navbar li:last-child::after {
-  content: ' ';
+  content: '';
 }
 
 .navbar a:hover {
@@ -125,7 +125,7 @@ Page Content Container
 .page-content-container {
   display: grid;
   grid-template-columns: 325px 453px;
-  grid-column-gap: 20px;
+  grid-column-gap: 60px;
   grid-template-areas: "sidebar main";
 }
 
@@ -137,7 +137,7 @@ Profile Sidebar Column
 .profile-sidebar {
   grid-area: sidebar;
   margin-left: 27px;
-  width: 300px;
+  width: 400px;
 }
 
 h1 {
@@ -198,7 +198,7 @@ Contact Box
 .contact-box {
   border: 2px solid rgb(102, 153, 204);
   height: 100px;
-  width: 300px;
+  width: 350px;
   margin-bottom: 24px;
 }
 
@@ -210,32 +210,6 @@ Contact Box
 }
 
 
-/*
-========================================
-MySpace URL
-========================================
-*/
-.myspace-url-box {
-  border: 1px solid rgb(102, 153, 204);
-  height: 26px;
-  margin-bottom: 24px;
-}
-
-.myspace-url-box h3,
-.myspace-url-box p {
-  margin: 0;
-  padding: 0;
-}
-
-.myspace-url-box h3 {
-  font-size: 8pt;
-  padding-left: 2px;
-}
-
-.myspace-url-box p {
-  padding-left: 6px;
-  ;
-}
 
 /*
 ========================================
@@ -293,14 +267,6 @@ Interests
   margin-bottom: 13px;
 }
 
-/*
-========================================
-Details
-========================================
-*/
-.details table {
-  margin-bottom: 22px;
-}
 
 /*
 ========================================
@@ -308,7 +274,7 @@ Schools
 ========================================
 */
 .schools .sidebar-table-header {
-  width: 228px;
+  width: 295px;
   color: black;
   font-weight: normal;
 }
@@ -407,171 +373,3 @@ Blurbs
   font-weight: bold;
 }
 
-/*
-========================================
-Friend Space
-========================================
-*/
-.friends header {
-  margin-bottom: 6px;
-}
-
-.friends p:nth-of-type(1) {
-  margin-top: 0;
-  margin-left: 15px;
-}
-
-.focus-highlight {
-  color: #cc0000;
-  font-weight: normal;
-  font-size: 10pt;
-}
-
-.friend-pic-container {
-  display: grid;
-  grid-template-columns: repeat(4, 109px);
-  grid-template-rows: 160px 193px;
-}
-
-.friend-pic-container figure {
-  margin: 0;
-}
-
-.friend-pic-container figcaption {
-  text-align: center;
-}
-
-.friend-pic-container img {
-  display: block;
-  margin: auto;
-}
-
-.friends-list-link {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.friends-list-link {
-  margin-top: 7px;
-  margin-right: 8px;
-  margin-bottom: 30px;
-}
-
-.friends-list-link a {
-  color: #cc0000;
-}
-
-/*
-========================================
-Comment Wall
-========================================
-*/
-.comment-wall .main-section-header {
-  margin-bottom: 3px;
-}
-
-.comment-wall .main-section-h2 {
-  margin-bottom: 0;
-}
-
-#comment-counter {
-  margin-top: 0;
-  margin-left: 15px;
-  margin-bottom: 3px;
-}
-
-.comment-wall table {
-  margin: auto;
-  margin-bottom: 5px;
-}
-
-.comment-wall th {
-  background-color: rgb(255, 153, 51);
-  width: 158px;
-  padding: 3px;
-  vertical-align: top;
-}
-
-.comment-wall td {
-  vertical-align: top;
-  background-color: rgb(249, 214, 180);
-  width: 269px;
-  padding: 3px;
-}
-
-.comment-wall figcaption,
-.comment-wall figure {
-  margin: 0;
-}
-
-.comment-wall figcaption {
-  margin-bottom: 1em;
-}
-
-.comment-wall figure {
-  margin-bottom: 49.33px;
-}
-
-.comment-wall h3 {
-  font-size: 10pt;
-  margin: 0;
-  margin-bottom: 1em;
-}
-
-.comment-wall p {
-  font-weight: normal;
-  text-align: left;
-  margin: 0;
-}
-
-#add-comment {
-  text-align: right;
-  margin-right: 10px;
-  margin-bottom: 5px;
-}
-
-/*
-========================================
-Footer
-========================================
-*/
-footer {
-  display: grid;
-  grid-template-rows: 16px 39px;
-  background-color: #e5e5e5;
-  padding-top: 10px;
-  height: 65px;
-}
-
-footer a {
-  text-decoration: underline;
-  font-weight: normal;
-  font-size: 8pt;
-}
-
-footer ul {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-footer li:after {
-  content: ' | ';
-  font-weight: normal;
-}
-
-#last:after {
-  content: none;
-}
-
-footer small {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  height: 100%;
-  font-size: 8pt;
-  font-weight: normal;
-}
