@@ -1,79 +1,88 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <link rel="stylesheet" href="css/style.css">
-  <title>Gaby's Website</title>
-</head>
-
+  <head>
+    <title>Gabyspace</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href=dist/css/bootstrap.css rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 <body>
-  <script type="text/javascript" src="script.js"></script>
-  <div class="master-container">
-
+  <script defer src="index.js"></script>
+  <script src="dist/js/bootstrap.js"></script>
     <!-- Main Header Begins -->
-    <header class="main-header">
-        <img src="pictures/gabyspace.png" height="84" width="275">
-    </header>
-
-    <nav class="navbar">
-      <ul>
-        <li><a href="#">Click</a></li>
-        <li><a href="#">Here</a></li>
-        <li><a href="#">For</a></li>
-        <li><a href="#">a</a></li>
-        <li><a href="#">Surprise</a></li>
-      </ul>
-    </nav>
+    <div class=container>
+      <div class="row gx-0">
+        <div class="col-3">
+        <img class="img-fluid" src="pictures/gabyspace.png">
+        </div>
+        <div class="col-9"></div>
+      </div>
+    <div class="container text-center">
+      <div class="row" id="navBar">
+        <a class="col lead text-white" href="#">Home</a>
+        <div class="col lead">|</div>
+        <a class="col text-white" href="#">Browse</a>
+        <div class="col lead">|</div>
+        <a class="col text-white" href="#">x</a>
+        <div class="col lead">|</div>
+        <a class="col text-white">Mail</a>
+        <div class="col lead">|</div>
+        <a class="col text-white">Blog</a>
+        <div class="col lead">|</div>
+        <a class="col text-white">Forum</a>
+        <div class="col lead">|</div>
+        <a class="col text-white">Events</a>
+        <div class="col lead">|</div>
+        <a class="col text-white">Videos</a>
+    </div>
+  </div>
     <!-- Main Header Ends -->
-
-    <div class="page-content-container">
-
+    <div class="row my-2">
+      <div class="col-5">
       <!-- Profile Sidebar Begins -->
-      <aside class="profile-sidebar">
-
-        <header>
-          <h1>Gaby Galvan</h1>
-        </header>
-
-        <!-- Profile Picture -->
-        <div class="profile-picture-container">
-          <img class="profile-pic" src="pictures/gaby pic.jpg" alt="A profile picture of Gaby" height="170" width="170">
-          <ul class="gender-age">
-            <li><b>"Hello World!"</b></p>
-            <li>Pronouns: She/her</li>
-            <li>Age: 28</li>
-            <li>Based in Tucson, AZ.</li>
-            <li>Zodiac sign: Sagittarius</li>
-          </ul>
-
+      <div class="card mb-3">
+        <div class="row g-0">
+          <h3 class="card-header">Gaby Galvan</h3>
+          <div class="col-md-6">
+            <img src="pictures/gaby pic.jpg" alt="A profile picture of Gaby" class="img-fluid rounded-start">
+          </div>
+          <div class="col-md-6">
+            <div class="card-body">
+              <h5 class="card-title">"Hello World!"</h5>
+              <p class="card-text">
+                Pronouns: She/her <br>
+                Age: 28<br>
+                Based in: Tucson, AZ<br>
+                Zodiac sign: Sagittarius ♐ 
+              </p>
+              <p class="card-text"><img class="img-fluid" src="pictures/onlinenow.gif" width="100px"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+        <!-- Contact Box -->
+        <div class="card">
+          <h5 class="card-header text-white" id="contact">Contacting Gaby</h5>
+          <div class="card-body">
+            <p><img src="pictures/github logo.png" height="20" width="20"> <a href="https://github.com/gabygalv"> Github link</a></p>
+            <p><img src="pictures/linkedin-logo.png" height="20" width="20"> <a href="https://www.linkedin.com/in/gaby-galvan/"> LinkedIn</a></p>
+            <p>📧 <a href="mailto:gabriela1galvan@gmail.com"> Email</a></p>
+            
+          </div>
         </div>
 
-        <!-- Contact Box -->
-        <section class="contact-box">
-          <h2>Contacting Gaby</h2>
-
-          <figure class="contact-images">
-            <p><img src="pictures/github logo.png" height="15" width="15"><a href="https://github.com/gabygalv">Github link</a></p>
-            <p><img src="pictures/linkedin-logo.png" height="15" width="15"><a href="https://www.linkedin.com/in/gaby-galvan/">LinkedIn</a></p>
-          </figure>
-        </section>
-
-
         <!-- Interests Section -->
-        <section class="interests">
-          <table class="sidebar-table">
+        <section id="interests">
+          <table id="sidebar-table">
 
             <caption>
-              <h2 class="sidebar-table-h2">Gaby's Interests</h2>
+              <h2 id="sidebar-table-h2">Gaby's Interests</h2>
             </caption>
 
             <tbody>
               <tr>
-                <th class="sidebar-table-header" scope="row">General</th>
-                <td class="sidebar-table-data">
+                <th id="sidebar-table-header" scope="row">General</th>
+                <td id="sidebar-table-data">
                   <p>All things internet, Movies, Travel, Pop culture, Music </p>
                 </td>
               </tr>
@@ -83,16 +92,16 @@
         </section>
 
         <!-- Gaby's Schools Section -->
-        <section class="schools">
-          <table class="sidebar-table">
+        <section id="schools">
+          <table id="sidebar-table">
 
             <caption>
-              <h2 class="sidebar-table-h2">Gaby's Schools</h2>
+              <h2 id="sidebar-table-h2">Gaby's Schools</h2>
             </caption>
 
             <tbody>
               <tr>
-                <th class="sidebar-table-header" scope="row">
+                <th id="sidebar-table-header" scope="row">
                   <ul>
                     <li><b>Northern Arizona University</b></li>
                     <li>Status: Graduated 2017</li>
@@ -104,7 +113,7 @@
               </tr>
 
               <tr>
-                <th class="sidebar-table-header" scope="row">
+                <th id="sidebar-table-header" scope="row">
                   <ul>
                     <li><b>Flatiron School</b></li>
                     <li>Status: Currently enrolled</li>
@@ -117,27 +126,27 @@
           </table>
 
         </section>
-      </aside>
+      </div>
       <!-- Profile Side Bar Ends -->
 
       <!-- Main Section -->
-      <main>
-
-        <section class="user-network">
+      <div class="col-7">
+        <section id="user-network">
           <header>
             <h2>Gaby is in your SE cohort</h2>
           </header>
         </section>
 
-        <section class="blurbs">
-          <header class="main-section-header">
-            <h2 class="main-section-h2">About Gaby</h2>
+        <section id="blurbs">
+          <header id="main-section-header">
+            <h2 id="main-section-h2">About Gaby</h2>
           </header>
 
           <p>Astuff about mejsnfkjansdkjfnasdlkfjaslkdm</p>
 
         </section>
-
-</body>
-
+      </div>
+    </div> 
+    </div>
+  </body>
 </html>
