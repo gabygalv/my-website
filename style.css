@@ -1,6 +1,29 @@
 #navBar {
-   background-color: #52C4FF; 
+   background-color: #5283BFff; 
 }
-#contact {
- background-color: #52C4FF;  
+#light-blue {
+ background-color: #CDE1F9ff;  
 }
+#orange{
+   background-color: #FFC285ff;
+}
+#torquoise {
+ background-color: #A1C4EEff;  
+}
+#purple{
+background-color: #AB81FF;
+}
+#grey{
+background-color: #CDE1F9ff;
+}
+#dark-grey{
+background-color: #71717D;
+}
+
+/* CSS HEX 
+--jordy-blue: #A1C4EEff;
+--peach: #FFC285ff;
+--columbia-blue: #CDE1F9ff;
+--silver-lake-blue: #5283BFff;
+--phthalo-blue: #001A89ff;
+*/
